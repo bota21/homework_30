@@ -1,0 +1,32 @@
+body{
+  background: #a2ca28;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+.header{
+  padding: 33px 0 17px;
+  background: #2e3b4e;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_menu{
+  margin: 0 18px 18px 0;
+}
+.header_menu_link{
+  color: #fff;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-bottom: 13px;
+}
+.header_menu_link:focus{
+  outline: none;
+}
