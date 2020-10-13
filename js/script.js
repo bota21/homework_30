@@ -10,10 +10,11 @@ $(() => {
   };
   let classes = ['resources', 'training', 'connect', 'explore', 'browse', 'connection', 'promo_first', 'promos_item_first_wrapper', 'promos_item_text_first', 'promo_second', 'promos_item_second_wrapper'];
   let titles = ['Resources', 'Training & Funding', 'Connect', 'track your', 'lifestyle', 'summer of fun'];
-  let linksAndImg = ['Explore more', 'Browse training', 'Connect now', 'upload/fitness-1.jpg', 'upload/fitness-2.jpg'];
+  let linksAndImg = ['Explore more', 'Browse training', 'Connect now', 'upload/fitness-1.jpg', 'upload/fitness-2.jpg', 'img/ic-case.png', 'img/ic-clock.png', 'img/ic-cloud.png'];
 
-  let addAdvantagesBlock = (classWrapper, classLink, title, text, link) => {
+  let addAdvantagesBlock = (classWrapper, url, classLink, title, text, link) => {
     $('<div>').appendTo('.advantages').addClass('advantages_item').addClass(classWrapper)
+    .css({background: `url(${url}) no-repeat`})
       .html(`<h3 class="advantages_item_title">${title}</h3>
               <p class="advantages_item_text">${text}</p>
               <a href="#" class="advantages_item_link ${classLink}">${link}
@@ -21,9 +22,9 @@ $(() => {
               </a>`);
   };
 
-  addAdvantagesBlock(classes[0], classes[3], titles[0], text.advantagesFirst, linksAndImg[0]);
-  addAdvantagesBlock(classes[1], classes[4], titles[1], text.advantagesSecond, linksAndImg[1]);
-  addAdvantagesBlock(classes[2], classes[5], titles[2], text.advantagesThird, linksAndImg[2]);
+  addAdvantagesBlock(classes[0], linksAndImg[5], classes[3], titles[0], text.advantagesFirst, linksAndImg[0]);
+  addAdvantagesBlock(classes[1], linksAndImg[6], classes[4], titles[1], text.advantagesSecond, linksAndImg[1]);
+  addAdvantagesBlock(classes[2], linksAndImg[7], classes[5], titles[2], text.advantagesThird, linksAndImg[2]);
 
   let addPromoBlock = (classWrapper, srcImg, classItem, title1, title2, classText, text) => {
     $('<div>').appendTo('.promos').addClass('promos_item').addClass(classWrapper)
