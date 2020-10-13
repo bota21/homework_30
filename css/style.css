@@ -153,6 +153,10 @@ a:focus {
   color: #656e74;
 }
 
+.promo_second{
+  background: #96bb25;
+}
+
 .promos_item_second_wrapper {
   color: #fff;
   margin: 59px 20px 74px 60px;
